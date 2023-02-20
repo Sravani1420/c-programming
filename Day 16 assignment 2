@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i;
+	float num,highest,secondhighest;
+	printf("enter the total no of elements");
+	scanf("%d",&n);
+	printf("enter number 1:");
+	scanf("%f",&highest);
+	printf("enter number 2:");
+	scanf("%d",&num);
+	if(num>highest)
+	{
+		secondhighest=highest;
+		highest=num;
+	}
+	else
+	{
+		secondhighest=num;
+	}
+	for(i=3;i<=n;i++);
+	{
+	printf("enter number %d:",i);
+	scanf("%f",&num);
+	if(num>highest)
+	{
+		secondhighest=highest;
+		highest=num;
+	}
+else if (num>secondhighest)
+{
+	secondhighest=num;
+}
+}
+printf("second highest number=%f",secondhighest);
+}
