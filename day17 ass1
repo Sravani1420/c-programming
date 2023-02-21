@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int s=0,r,m,n;
+	scanf("%d",&n);
+	m=n;
+	while(n>0)
+	{
+		s=n%10;
+		s=s+(r*r*r);
+		n=n/10;
+	}
+	if(s==m)
+	printf("armstrong number");
+	else
+	printf("not a armstrong number");
+	getch();
+}
